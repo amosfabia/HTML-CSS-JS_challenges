@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Form Inputs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>HTML Forms</h1>
+
+    <form>
+      <section>
+        <h2>Input Type = Text</h2>
+        <p>
+          This html input element accepts text input from user. The default
+          attribute "type" is text. Id and name attributes commonly used with
+          the same values
+        </p>
+        <input type="text" id="firstInput" name="firstInput" />
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Input Type = Text with Label</h2>
+        <p>
+          Same with example above but with label that have corresponding "for"
+          attribute. The "for" attribute transfers the focus to the input when
+          the label is clicked.
+        </p>
+        <label for="name">Type your name:</label>
+        <input type="text" id="name" name="name" />
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Input Type = Number with Label</h2>
+        <p>
+          In this html input, it accepts numbers only. Minimum and maximum
+          values can be restricted with "min" and "max" attributes.
+        </p>
+        <label for="programmerYrsExp"
+          >Years of experience in Programming:</label
+        >
+        <input
+          type="number"
+          id="programmerYrsExp"
+          name="programmerYrsExp"
+          min="0"
+          max="100"
+        />
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Input Type = Range with Label</h2>
+        <p>
+          Range input also accepts numbers only as input but not as a textbox
+          instead it presents as slider to get the value from user. It has
+          "step" attribute to restrict the step between values.
+        </p>
+
+        <label for="personalityType">Personality Type</label>
+        <br />
+
+        <span>Extrovert</span>
+        <input
+          type="range"
+          id="personalityType"
+          name="personalityType"
+          min="0"
+          max="100"
+          step="10"
+        />
+        <span>Introvert</span>
+      </section>
+
+      <hr />
+
+      <section class="Checkboxes">
+        <h2>Input Type = checkboxes with Label</h2>
+        <p>
+          Checkboxes offers users to have multiple answers unlike radio button
+          that only accepts either of the choices.
+        </p>
+
+        <section class="choices">
+          <h4>Pick your Programming Languages</h4>
+
+          <input
+            type="checkbox"
+            id="Javascript"
+            value="Javascript"
+            name="Programming Languages"
+          />
+          <label for="Javascript">Javascript</label>
+          <input
+            type="checkbox"
+            id="HTML"
+            value="HTML"
+            name="Programming Languages"
+          />
+          <label for="HTML">HTML</label>
+          <input
+            type="checkbox"
+            id="CSS"
+            value="CSS"
+            name="Programming Languages"
+          />
+          <label for="CSS">CSS</label>
+          <input
+            type="checkbox"
+            id="Typescript"
+            value="Typescript"
+            name="Programming Languages"
+          />
+          <label for="Typescript">Typescript</label>
+          <input
+            type="checkbox"
+            id="MySQL"
+            value="MySQL"
+            name="Programming Languages"
+          />
+          <label for="MySQL">MySQL</label>
+          <input
+            type="checkbox"
+            id="PHP"
+            value="PHP"
+            name="Programming Languages"
+          />
+          <label for="PHP">PHP</label>
+        </section>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Input Type = radio buttons with Label</h2>
+        <p>
+          While checkboxes allows users to pick more than one choice, there are
+          case where we need the user to only pick one of the choices.
+        </p>
+
+        <input type="radio" name="mamiliKa" id="Nanay" value="nanay" />
+        <label for="Nanay">Nanay Mo</label>
+        <input type="radio" name="mamiliKa" id="Ako" value="ako" />
+        <label for="Ako">Ako</label>
+      </section>
+
+      <section>
+        <h2>Input Type = dropdown list or "select" tags with Label</h2>
+        <p>
+          this is the version of radion button with many options. This is
+          preferred when user need to choose only one from many options.
+        </p>
+
+        <label for="lunch">Saan tayo Kain?</label>
+        <select name="lunch" id="lunch">
+            <option value="kahit saan">Kahit Saan</option>
+            <option value="ikaw bahala">Ikaw Bahala</option>
+            <option value="basta masarap">Basta masarap</option>
+            <option value="ikaw na mamili">Ikaw na Mamili</option>
+        </select>
+      </section>
+    </form>
+  </body>
+</html>
